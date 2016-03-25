@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo echo "Hello.."
+sudo sleep 1s;
+sudo echo "Sleepy World!"
+
+exit 0;

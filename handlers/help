@@ -1,0 +1,9 @@
+#!/bin/bash
+
+_usage(){
+  str="Available Commands:"
+  str="$str""$(echo "\n" && (ls "./handlers" | awk '{print "  "$1}' ))"
+  echo -e "$str"
+}
+
+_usage
