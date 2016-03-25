@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /Users/rajatg/pyProjects/offers/control-machine
+ssh vagrant@192.168.33.10 'bash' < hello.sh
