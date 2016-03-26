@@ -22,3 +22,9 @@ module.exports = (robot) ->
 
   robot.respond /yo/i, (msg) ->
     msg.send msg.random greetings
+
+  robot.respond /good night/, (msg) ->
+    msg.send 'Good Night'
+
+  robot.respond /good morning/, (msg) ->
+    msg.send 'Morning Babes.. Hoping you do well today :stuck_out_tongue_winking_eye: '
