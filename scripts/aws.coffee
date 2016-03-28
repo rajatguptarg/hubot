@@ -20,7 +20,7 @@
 #   It's highly recommended to use a read-only IAM account for this purpose
 #   https://console.aws.amazon.com/iam/home?
 #   SQS - requires ListQueues, GetQueueAttributes and ReceiveMessage
-#   EC2 - requires EC2:Describe*, elasticloadbalancing:Describe*, cloudwatch:ListMetrics, 
+#   EC2 - requires EC2:Describe*, elasticloadbalancing:Describe*, cloudwatch:ListMetrics,
 #   cloudwatch:GetMetricStatistics, cloudwatch:Describe*, autoscaling:Describe*
 #
 # Author:
@@ -97,11 +97,13 @@ getRegionInstances = (region, msg) ->
             .format 'ddd, L LT'
           arch = instance.architecture
           devType = instance.rootDeviceType
+          ip = instance.ipAddress
 
           tags = _.flatten [instance.tagSet?.item ? []]
           name = (_.find tags, (t) -> t.key == 'Name')?.value ? 'missing'
+          console.log instance
 
-          msg.send "#{prefix} [#{state}] - #{name} / #{type} - started #{launchTime} #{suffix}"
+          msg.send "#{prefix} [#{state}] - #{name} | [#{type}] - IP: #{ip}"
 
 getRegionQueues = (region, msg) ->
   sqs.setRegion(region).request 'ListQueues', {}, (error, queues) ->
