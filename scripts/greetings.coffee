@@ -1,16 +1,11 @@
 greetings = ["Hi", "Hola", "Hello", "Yo"]
-#
-# module.exports = (robot) ->
-#   robot.respond /hi/hello/yo/i, (msg) ->
-#     msg.send msg.random greetings
-
-
 enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
 leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
 
 module.exports = (robot) ->
   robot.enter (res) ->
     res.send res.random enterReplies
+
   robot.leave (res) ->
     res.send res.random leaveReplies
 
@@ -24,25 +19,46 @@ module.exports = (robot) ->
     msg.send msg.random greetings
 
   robot.respond /good night/i, (msg) ->
-    msg.send 'Good Night'
+    msg.send 'Good Night.. sweet dreams :kissing:'
+
+  robot.respond /bye/i, (msg) ->
+    msg.send "bye.. miss you :kissing:"
 
   robot.respond /good morning/i, (msg) ->
-    msg.send 'Good Morning .. Hoping you do well today :stuck_out_tongue_winking_eye: '
+    msg.send 'Good Morning .. Hope you do well today :stuck_out_tongue_winking_eye: '
 
-  robot.respond /thanks/i, (msg) ->
+  robot.respond /thank/i, (msg) ->
     msg.send "my pleasure :blush:"
 
-  robot.respond /what are you doing/i, (msg) ->
-    msg.send "just normal work.. what about you?"
+  robot.respond /what (are|r) (you|u) doin(|g)/i, (msg) ->
+    msg.send "just killing mah time.. what about you?"
 
-  robot.respond /how are you/i, (msg) ->
-    msg.send "i am good and you?"
-
-  robot.respond /whats up/i, (msg) ->
-    msg.send "nothing..."
+  robot.respond /how (are|r) (you|u)/i, (msg) ->
+    msg.send "i am pretty good and you?"
 
   robot.respond /wassup/i, (msg) ->
-    msg.send "nothing dude.. wbu?"
+    msg.send "nothing .. wbu?"
 
-  robot.respond /u there/i, (msg) ->
-    msg.send "yes dude.."
+  robot.respond /whats up/i, (msg) ->
+    msg.send "nothing .. wbu?"
+
+  robot.respond /(you|u) there/i, (msg) ->
+    msg.send "yes dear.."
+
+  robot.respond /(.*) busy (.*)/i, (msg) ->
+    msg.send "not for you :hugging_face:"
+
+  robot.respond /:(.*):/, (msg) ->
+    msg.send ":blush:"
+
+  robot.respond /(.*) like (your|ur) (.*)/i, (msg) ->
+    msg.send "thank you.. :blush:"
+
+  robot.respond /(.*) kiss (.*)/i, (msg) ->
+    msg.send ":kiss:"
+
+  robot.respond /(.*) hug (.*)/i, (msg) ->
+    msg.send ":hugging_face:"
+
+  robot.respond /(.*) wan(na|t) (.*) (u|you)/i, (msg) ->
+    msg.send ":thinking_face: okay dear..."
