@@ -43,3 +43,6 @@ module.exports = (robot) ->
 
   robot.respond /wassup/i, (msg) ->
     msg.send "nothing dude.. wbu?"
+
+  robot.respond /u there/i, (msg) ->
+    msg.send "yes dude.."
