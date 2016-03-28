@@ -23,8 +23,23 @@ module.exports = (robot) ->
   robot.respond /yo/i, (msg) ->
     msg.send msg.random greetings
 
-  robot.respond /good night/, (msg) ->
+  robot.respond /good night/i, (msg) ->
     msg.send 'Good Night'
 
-  robot.respond /good morning/, (msg) ->
-    msg.send 'Morning Babes.. Hoping you do well today :stuck_out_tongue_winking_eye: '
+  robot.respond /good morning/i, (msg) ->
+    msg.send 'Good Morning .. Hoping you do well today :stuck_out_tongue_winking_eye: '
+
+  robot.respond /thanks/i, (msg) ->
+    msg.send "my pleasure :blush:"
+
+  robot.respond /what are you doing/i, (msg) ->
+    msg.send "just normal work.. what about you?"
+
+  robot.respond /how are you/i, (msg) ->
+    msg.send "i am good and you?"
+
+  robot.respond /whats up/i, (msg) ->
+    msg.send "nothing..."
+
+  robot.respond /wassup/i, (msg) ->
+    msg.send "nothing dude.. wbu?"
