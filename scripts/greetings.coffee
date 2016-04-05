@@ -19,10 +19,10 @@ module.exports = (robot) ->
     msg.send msg.random greetings
 
   robot.respond /good night/i, (msg) ->
-    msg.send 'Good Night..'
+    msg.send 'Good Night.. sweet dreams :kissing:'
 
   robot.respond /bye/i, (msg) ->
-    msg.send "bye.."
+    msg.send "bye.. miss you :kissing:"
 
   robot.respond /good morning/i, (msg) ->
     msg.send 'Good Morning .. Hope you do well today :stuck_out_tongue_winking_eye: '
@@ -43,7 +43,7 @@ module.exports = (robot) ->
     msg.send "nothing .. wbu?"
 
   robot.respond /(you|u) there/i, (msg) ->
-    msg.send "yes buddy.."
+    msg.send "yes dear.."
 
   robot.respond /(.*) busy (.*)/i, (msg) ->
     msg.send "not for you :hugging_face:"
@@ -54,5 +54,11 @@ module.exports = (robot) ->
   robot.respond /(.*) like (your|ur) (.*)/i, (msg) ->
     msg.send "thank you.. :blush:"
 
-  robot.respond /(.*) (are|r) awesome/i, (msg) ->
-    msg.send "I know... :sunglasses:"
+  robot.respond /(.*) kiss (.*)/i, (msg) ->
+    msg.send ":kiss:"
+
+  robot.respond /(.*) hug (.*)/i, (msg) ->
+    msg.send ":hugging_face:"
+
+  robot.respond /(.*) wan(na|t) (.*) (u|you)/i, (msg) ->
+    msg.send ":thinking_face: okay dear..."
