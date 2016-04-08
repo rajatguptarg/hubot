@@ -58,7 +58,7 @@ module.exports = (robot) ->
   robot.respond /(.*) kiss (.*)/i, (msg) ->
     msg.send ":kiss:"
 
-  robot.respond /(.*) love (.*)/i, (msg) ->
+  robot.respond /(.*) (love|luv) (.*)/i, (msg) ->
       msg.send msg.random loveResponses
 
   robot.respond /(.*) hug (.*)/i, (msg) ->
