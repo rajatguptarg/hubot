@@ -2,6 +2,7 @@ greetings = ["Hi", "Hola", "Hello", "Yo"]
 enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
 leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
 loveResponses = ['Me too', 'Love you too', 'Ditto']
+morningGreetings = ['Morning', 'Good Morning', 'Same to you']
 
 module.exports = (robot) ->
   robot.enter (res) ->
@@ -26,7 +27,7 @@ module.exports = (robot) ->
     msg.send "bye.. miss you :kissing:"
 
   robot.respond /good morning/i, (msg) ->
-    msg.send 'Good Morning .. Hope you do well today :stuck_out_tongue_winking_eye: '
+    msg.send msg.random morningGreetings
 
   robot.respond /thank/i, (msg) ->
     msg.send "my pleasure :blush:"
