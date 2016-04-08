@@ -1,6 +1,7 @@
 greetings = ["Hi", "Hola", "Hello", "Yo"]
 enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
 leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
+loveResponses = ['Me too', 'Love you too', 'Ditto']
 
 module.exports = (robot) ->
   robot.enter (res) ->
@@ -56,6 +57,9 @@ module.exports = (robot) ->
 
   robot.respond /(.*) kiss (.*)/i, (msg) ->
     msg.send ":kiss:"
+
+  robot.respond /(.*) love (.*)/i, (msg) ->
+      msg.send msg.random loveResponses
 
   robot.respond /(.*) hug (.*)/i, (msg) ->
     msg.send ":hugging_face:"
