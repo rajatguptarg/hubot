@@ -66,3 +66,6 @@ module.exports = (robot) ->
 
   robot.respond /(.*) wan(na|t) (.*) (u|you)/i, (msg) ->
     msg.send ":thinking_face: okay dear..."
+
+  robot.respond /(.*) remind me (.*)/i, (msg) ->
+    msg.respond "Please contact to slackbot for this. He is handling all this work."
