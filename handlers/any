@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
+
+cd /Users/rajatg/pyProjects/offers/infra
+ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/any.sh
