@@ -1,4 +1,4 @@
 
 SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
 
-sh $SCRIPT_PATH/elb-health.sh
+sh $SCRIPT_PATH/all-elb.sh
