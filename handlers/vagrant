@@ -2,5 +2,6 @@
 
 SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
 
-cd /Users/rajatg/pyProjects/offers/control-machine
+cd /Users/rajatg/pyProjects/offers/infra
+vagrant up
 ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/hello.sh
