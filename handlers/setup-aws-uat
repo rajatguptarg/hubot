@@ -3,4 +3,4 @@
 SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
 
 cd /Users/rajatg/pyProjects/offers/control-machine
-ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/setup-uat-infra.sh
+ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/setup-aws-uat.sh
