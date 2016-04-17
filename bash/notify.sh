@@ -5,11 +5,11 @@ set -e
 
 SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
 
-cd /Users/rajatg/pyProjects/offers/infra
+cd python-scripts
 
 
 while true
 do
-    echo "\`Notification service is already Started\`";
+    python notify.py
 	sleep 10s;
 done
