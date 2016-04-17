@@ -7,8 +7,9 @@ SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
 
 cd /Users/rajatg/pyProjects/offers/infra
 
-echo "\`Started looking for the ELB Healths\`\n"
 
-sleep 1s;
-
-bash $SCRIPT_PATH/notify.sh
+while true
+do
+    echo "\`Notification service is already Started\`";
+	sleep 10s;
+done
