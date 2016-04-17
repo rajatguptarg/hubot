@@ -24,7 +24,7 @@ sleep 1s;
 
 echo "\`Status for Commercial Service\`\n"
 echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name ELB-commercialService --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
-cat elb_logs.txt
+cat elb_log.txt
 sleep 1s;
 
 echo "\`Status for Notification Service\`\n"
