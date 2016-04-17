@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
+SCRIPT_PATH=$HUBOT_DIR/hubot/bash
 
-cd /Users/rajatg/pyProjects/offers/infra
+cd $HUBOT_DIR/infra
 ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/setup-aws-uat.sh

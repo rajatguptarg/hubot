@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SCRIPT_PATH=../hubot/bash
-cd ../infra
+SCRIPT_PATH=$HUBOT_DIR/hubot/bash
+cd $HUBOT_DIR/infra
 
-vagrant up
+vagrant up > log.txt
 ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/hello.sh

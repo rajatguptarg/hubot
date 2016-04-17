@@ -1,3 +1,5 @@
-SCRIPT_PATH=bash
+#!/bin/sh
+
+SCRIPT_PATH=$HUBOT_DIR/hubot/bash
 
 sh $SCRIPT_PATH/all-elb.sh
