@@ -7,7 +7,7 @@ SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
 
 cd /Users/rajatg/pyProjects/offers/infra
 
-echo "\`Started looking for the ELB Healths\`\n"
+echo "\`Started looking for the ELB Healths\`"
 
 sleep 1s;
 
