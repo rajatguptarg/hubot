@@ -3,7 +3,6 @@
 
 set -e
 
-cd ~/Projects/hubot/logs
 
 echo "\`Status for FlightInfo Service\`"
 echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name UAT-ELB-flightInfoService --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
