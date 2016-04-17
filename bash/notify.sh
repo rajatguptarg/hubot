@@ -3,7 +3,7 @@
 
 set -e
 
-SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
+SCRIPT_PATH=bash
 
 cd python-scripts
 

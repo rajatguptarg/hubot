@@ -3,13 +3,9 @@
 
 set -e
 
-/bin/zsh << 'EOF'
-
 # workon offers
 # { echo "\`\`\`"; aws elb describe-instance-health --load-balancer-name ELB-flightInfoService; echo "\`\`\`";} | sed -e 'N;s/\n/ /'
 
-
-cd ~/Projects/hubot/logs
 
 echo "\`Status for FlightInfo Service\`\n"
 echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name UAT-ELB-flightInfoService --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
@@ -58,5 +54,3 @@ cat elb_log.txt
 sleep 1s;
 
 # deactivate
-
-EOF
