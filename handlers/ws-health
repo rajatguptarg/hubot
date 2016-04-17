@@ -3,7 +3,7 @@
 
 set -e
 
-echo "\`Status for Weather Service\`\n"
+echo "\`Status for Weather Service\`"
 echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name UAT-ELB-weatherService --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
 cat elb_log.txt
 sleep 1s;

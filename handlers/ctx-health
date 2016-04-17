@@ -4,7 +4,7 @@
 set -e
 
 
-echo "\`Status for Contextual Service\`\n"
+echo "\`Status for Contextual Service\`"
 echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name UAT-ELB-contextualService --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
 cat elb_log.txt
 sleep 1s;
