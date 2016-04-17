@@ -1,4 +1,3 @@
-
-SCRIPT_PATH=/Users/rajatg/Projects/hubot/bash
+SCRIPT_PATH=bash
 
 sh $SCRIPT_PATH/all-elb.sh
