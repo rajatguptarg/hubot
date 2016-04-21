@@ -1,0 +1,36 @@
+Hi All,
+
+I am assuming, everyone here have some knowledge about DevOps. Basically:
+
+- What is DevOps?
+- How people do DevOps?   (not necessary)
+
+Here is new era of DevOps is started, means all the DevOps work can be done over the chat. This is called as a ChatOps. Mostly DevOp do all the infrastructure related work over a shell. ChatOps focuses to create/maintain infrastructure over the chat (can be IRC, Slack, GitHub etc) .
+
+Why ChatOps?
+- Really .. ?? Communication matters.
+
+We are working in agile teams which means much control and flexibility in the teams. And, ChatOps really provides all these things. Suppose, you deploy your infrastructure from Slack, and everyone (BAs, QAs, DEVs etc) knows about the deployment and its status within the Slack and everyone will have context, how the deployment works for the project.
+
+Now even the non-technical persons who doesn’t know about anything of DevOps can deploy the services over a chat and everyone will come to know how and what happened for that deployment. In case of failures, everyone will know.
+
+- Hey.. Deployment failed..!!
+- We know it. Tell something new.
+
+Really wants real fun?
+
+Its time to explore ChatOps. I am using these things for my ChatOps:
+
+- Coffee Script
+- Bash
+- Ansible
+- Python
+
+Using all these things, we can really built an awesome infrastructure over the chat. We will see all these things step by step.
+
+Part 1: The Hubot
+
+Hubot is a programmatic bot, you can program this according to your needs. Basic template of hubot can get from GitHub repo. It is written in CoffeeScript.  You can implement custom listeners for messages in the chat or DMs with hubot. You can integrate the hubot with Slack, IRC or any other adapters.
+
+Mike: @hubot we love you
+Hubot: Same here
