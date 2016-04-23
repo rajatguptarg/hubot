@@ -34,3 +34,19 @@ Hubot is a programmatic bot, you can program this according to your needs. Basic
 
 Mike: @hubot we love you
 Hubot: Same here
+
+Part 2: Using Bash
+
+Hubot is easily listens to your commands and based on the given command to hubot, you can easily run some bash scripts. So I wrote my bash scripts for triggering some commands such as looking health of my load balancers which are attached to my services.
+
+
+Part 3: Awesome Ansible
+
+If you are writing your infrastructure as a code, then ansible is a good choice to do that. The interested thing that I did is to use Ansible and I integrated my Ansible scripts with Hubot. Based on the commands given to the hubot, it can execute ansible scripts, by which you can do the deployments and monitor the deployments activities of your team.
+
+
+Part 4: One and only Python
+
+In slack, one of the thing you want to notify you when your service fails. So you can easily write Notification Services in Python and integrate with the Slack, so when your services are not working, it will notify you that this service is not working. You can more python scripts according to your needs.
+
+Overall, using ChatOps, your deployments will become more easy and increase the confidence and knowledge of the deployments for your services and the product in the team. It brings everyone on board for DevOps.
