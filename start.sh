@@ -4,5 +4,5 @@
 while true
 do
     bin/hubot -a slack -n samantha >> hubot.log
-    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>YYYYYYYYYYYYYYYYYOOOOOOOOOOOOOOOOOO<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+    echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>SCRIPT RESTARTED<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<" >> hubot.log
 done
