@@ -5,7 +5,9 @@ set -e
 
 SCRIPT_PATH=$HUBOT_DIR/hubot/bash
 
-echo "\`Started looking for the ELB Healths\`"
+echo "I started looking on the services health."
+sleep 1s;
+echo "Dont worry.. :blush:"
 
 sleep 1s;
 
