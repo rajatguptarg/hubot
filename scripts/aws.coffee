@@ -103,7 +103,7 @@ getRegionInstances = (region, msg) ->
           name = (_.find tags, (t) -> t.key == 'Name')?.value ? 'missing'
           console.log instance
 
-          msg.send "#{prefix} [#{state}] - #{name} | [#{type}] - IP: #{ip}"
+          msg.send "#{prefix} [#{state}] - #{name} |  IP: #{ip}"
 
 getRegionQueues = (region, msg) ->
   sqs.setRegion(region).request 'ListQueues', {}, (error, queues) ->
