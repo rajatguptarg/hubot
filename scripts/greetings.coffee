@@ -32,41 +32,5 @@ module.exports = (robot) ->
   robot.respond /thank/i, (msg) ->
     msg.send "my pleasure :blush:"
 
-  robot.respond /what (are|r) (you|u) doin(|g)/i, (msg) ->
-    msg.send "just killing mah time.. what about you?"
-
-  robot.respond /how (are|r) (you|u)/i, (msg) ->
-    msg.send "i am pretty good and you?"
-
-  robot.respond /wassup/i, (msg) ->
-    msg.send "nothing .. wbu?"
-
-  robot.respond /whats up/i, (msg) ->
-    msg.send "nothing .. wbu?"
-
-  robot.respond /(you|u) there/i, (msg) ->
-    msg.send "yes dear.."
-
-  robot.respond /(.*) busy (.*)/i, (msg) ->
-    msg.send "not for you :hugging_face:"
-
-  robot.respond /:(.*):/, (msg) ->
-    msg.send ":blush:"
-
-  robot.respond /(.*) like (your|ur) (.*)/i, (msg) ->
-    msg.send "thank you.. :blush:"
-
-  robot.respond /(.*) kiss (.*)/i, (msg) ->
-    msg.send ":kiss:"
-
-  robot.respond /(.*) (love|luv) (.*)/i, (msg) ->
-      msg.send msg.random loveResponses
-
-  robot.respond /(.*) hug (.*)/i, (msg) ->
-    msg.send ":hugging_face:"
-
-  robot.respond /(.*) wan(na|t) (.*) (u|you)/i, (msg) ->
-    msg.send ":thinking_face: okay dear..."
-
   robot.respond /(.*) remind me (.*)/i, (msg) ->
     msg.respond "Please contact to slackbot for this. He is handling all this work."
