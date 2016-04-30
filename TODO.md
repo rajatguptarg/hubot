@@ -1,3 +1,3 @@
 # List of TODOs
 
-* Deploy Services from Hubot
+* Authorization in Hubot for deployments
