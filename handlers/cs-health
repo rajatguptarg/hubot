@@ -5,6 +5,6 @@ set -e
 
 
 echo "\`Status for Commercial Service\`"
-echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name UAT-ELB-commercialService --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
+echo "\`\`\`" | (aws elb describe-instance-health --load-balancer-name UAT-ELB-CS --output table| (echo "\`\`\`" && cat) && cat) > elb_log.txt
 cat elb_log.txt
 sleep 1s;
