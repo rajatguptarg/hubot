@@ -18,4 +18,6 @@ module.exports = (robot) ->
 
   robot.respond /. (.*)/i, (msg) ->
     data = msg.match[1].trim()
-    cleverbot.prepare(( -> c.write(data, (c) => msg.send(c.message))))
+    cleverbot.prepare(( -> c.write(data, (c) =>
+      console.log c
+      msg.send(c.message))))
