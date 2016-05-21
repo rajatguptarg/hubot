@@ -1,3 +1,5 @@
+#!/bin/usr/env python
+
 payload = {
     "attachments": [
         {
