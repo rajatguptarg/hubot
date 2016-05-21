@@ -1,6 +1,0 @@
-#!/bin/bash
-
-SCRIPT_PATH=$HUBOT_DIR/hubot/bash
-
-cd $HUBOT_DIR/infra
-ssh vagrant@192.168.33.10 'bash' < $SCRIPT_PATH/deploy-cs-uat.sh
