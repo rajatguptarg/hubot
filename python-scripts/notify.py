@@ -18,7 +18,7 @@ services.append(os.environ.get('WS_URL'))
 
 service_name = {
     os.environ.get('CS_URL'): "Commercial Service",
-    os.environ.get('CMS_URL'): "Commercial Service",
+    os.environ.get('CMS_URL'): "Content Management Service",
     os.environ.get('CTX_URL'): "Contextual Service",
     os.environ.get('FIS_URL'): "Flight Info Service",
     os.environ.get('FS_URL'): "Feedback Service",
@@ -64,8 +64,6 @@ payload = {
         }
     ]
 }
-
-print payload
 
 if len(message) > msg_len:
     r.post(

@@ -11,5 +11,5 @@ cd python-scripts
 while true
 do
     python notify.py
-	sleep 1800s;
+	sleep 10s;
 done
